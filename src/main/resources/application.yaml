@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: isp-management-system
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+server:
+  port: 8080
+
+jwt:
+  expiration-ms: 900000 # 15 minutes
+  refresh-expiration-ms: 1209600000 # 14 days
+
+features:
+  register-endpoint:
+    enabled: true
